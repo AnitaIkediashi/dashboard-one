@@ -81,7 +81,7 @@ const Sidebar = () => {
 
       {/* mobile */}
       <div
-        className="fixed top-11 md:top-12 left-6 lg:hidden block  z-10 cursor-pointer"
+        className="fixed top-8 md:top-10 left-6 lg:hidden w-10 h-10 rounded-full bg-white shadow-md  grid place-items-center  z-10 cursor-pointer"
         onClick={() => setActive(!active)}
       >
         <img src={hamburgerMenu} alt="" />

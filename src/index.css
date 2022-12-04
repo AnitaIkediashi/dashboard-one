@@ -1,13 +1,37 @@
-body {
+/* clash display font */
+@import url('https://fonts.cdnfonts.com/css/clash-display');
+
+/* epilogue, inter,red hat display font */
+@import url('https://fonts.cdnfonts.com/css/clash-display');
+
+/* reset styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.h2-text {
+  font-feature-settings: 'cv11' on;
+}
+
+.CircularProgressbar-path {
+  stroke-width: 10px !important;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar {
+  @apply fixed -left-full top-0 max-w-[372px] w-full h-screen bg-color-blue-50 z-20 lg:hidden duration-300 ease-in overflow-y-scroll 
+}
+
+.sidebar.active {
+  @apply left-0
 }

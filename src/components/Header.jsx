@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="h-fit w-full bg-white flex items-center p-8 shadow-[inset_0px_-1px_#d6dde8]">
       <nav className="w-full h-full flex items-center justify-between">
-        <h1 className="font-clashDisplay font-semibold sm:text-[2rem] text-lg text-color-black-200 pl-10 lg:pl-0">
+        <h1 className="font-clashDisplay font-semibold sm:text-[2rem] text-lg text-color-black-200 pl-10 lg:pl-0 overflow-y-hidden">
           Dashboard
         </h1>
         <div className="flex items-center gap-4 sm:gap-8">
